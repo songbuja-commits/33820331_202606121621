@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>MVP 솔루션 - 요금안내</title>
+  <link rel='stylesheet' href='assets/css/style.css'>
+</head>
+<body>
+  <header class='navbar'>
+    <div class='container nav-container'>
+      <a href='index.html' class='logo'>MVP Solution</a>
+      <button class='menu-toggle' id='mobile-menu-btn' aria-label='메뉴 열기'>☰</button>
+      <nav class='nav-menu' id='nav-menu'>
+        <a href='index.html'>홈</a>
+        <a href='service.html'>서비스</a>
+        <a href='problem.html'>문제점</a>
+        <a href='how-it-works.html'>작동원리</a>
+        <a href='use-cases.html'>활용사례</a>
+        <a href='pricing.html'>요금제</a>
+        <a href='contact.html'>문의</a>
+      </nav>
+    </div>
+  </header>
+  <main class='container section'>
+    <h1 class='text-center'>가격 안내 및 MVP 사전신청</h1>
+    <div class='mvp-notice'>
+      <p>⚠️ 본 요금제는 MVP 단계 사전 검증용 사양입니다. 정식 출시 시 일부 구성이 변경될 수 있습니다.</p>
+    </div>
+    <div class='grid-3 mb-40'>
+      <div class='card text-center pricing-card'>
+        <h3>Starter</h3>
+        <h2 class='price'>무료</h2>
+        <p class='text-muted'>핵심 기능을 가볍게 체험하기</p>
+        <ul class='pricing-features'>
+          <li>기본 분석 템플릿 제공</li>
+          <li>월 500건 데이터 처리</li>
+          <li>커뮤니티 포럼 지원</li>
+        </ul>
+        <a href='contact.html' class='btn btn-outline btn-block'>무료로 시작하기</a>
+      </div>
+      <div class='card text-center pricing-card popular'>
+        <div class='badge badge-popular'>가장 인기</div>
+        <h3>Professional</h3>
+        <h2 class='price'>₩29,000<small>/월</small></h2>
+        <p class='text-muted'>실무자를 위한 맞춤형 기능</p>
+        <ul class='pricing-features'>
+          <li>Starter 기능 모두 포함</li>
+          <li>데이터 처리 무제한</li>
+          <li>실시간 이메일 고객 지원</li>
+          <li>고급 자동화 워크플로우</li>
+        </ul>
+        <a href='contact.html' class='btn btn-primary btn-block'>사전 신청하기</a>
+      </div>
+      <div class='card text-center pricing-card'>
+        <h3>Enterprise</h3>
+        <h2 class='price'>별도 문의</h2>
+        <p class='text-muted'>대규모 조직을 위한 전용 환경</p>
+        <ul class='pricing-features'>
+          <li>사내 독립형 인프라 구축</li>
+          <li>기존 레거시 맞춤형 연동</li>
+          <li>24/7 전담 엔지니어 배정</li>
+        </ul>
+        <a href='contact.html' class='btn btn-dark btn-block'>도입 문의하기</a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class='container text-center'>
+      <p>&copy; 2023 MVP Solution. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src='assets/js/main.js'></script>
+</body>
+</html>
