@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>MVP 솔루션 - 문의하기</title>
+  <link rel='stylesheet' href='assets/css/style.css'>
+</head>
+<body>
+  <header class='navbar'>
+    <div class='container nav-container'>
+      <a href='index.html' class='logo'>MVP Solution</a>
+      <button class='menu-toggle' id='mobile-menu-btn' aria-label='메뉴 열기'>☰</button>
+      <nav class='nav-menu' id='nav-menu'>
+        <a href='index.html'>홈</a>
+        <a href='service.html'>서비스</a>
+        <a href='problem.html'>문제점</a>
+        <a href='how-it-works.html'>작동원리</a>
+        <a href='use-cases.html'>활용사례</a>
+        <a href='pricing.html'>요금제</a>
+        <a href='contact.html'>문의</a>
+      </nav>
+    </div>
+  </header>
+  <main class='container section'>
+    <h1 class='text-center'>상담 문의 및 사전 신청</h1>
+    <p class='text-center mb-40'>솔루션 도입 관련 궁금한 점이나 MVP 사전 신청을 원하시면 아래 양식을 작성해주세요.</p>
+    <div class='card form-container'>
+      <form id='contactForm'>
+        <div class='form-group'>
+          <label for='name'>이름 또는 회사명 *</label>
+          <input type='text' id='name' class='form-control' required placeholder='홍길동 / (주)컴퍼니'>
+        </div>
+        <div class='form-group'>
+          <label for='email'>답변 받을 이메일 *</label>
+          <input type='email' id='email' class='form-control' required placeholder='example@domain.com'>
+        </div>
+        <div class='form-group'>
+          <label for='interest'>관심 요금제</label>
+          <select id='interest' class='form-control'>
+            <option value='starter'>Starter (무료 체험)</option>
+            <option value='pro'>Professional (사전 신청)</option>
+            <option value='enterprise'>Enterprise (도입 문의)</option>
+          </select>
+        </div>
+        <div class='form-group'>
+          <label for='message'>문의 내용 *</label>
+          <textarea id='message' class='form-control' rows='5' required placeholder='해결하고자 하는 문제나 원하시는 솔루션 방향을 자세히 적어주세요.'></textarea>
+        </div>
+        <div class='checkbox-group'>
+          <input type='checkbox' id='privacy' required>
+          <label for='privacy'>개인정보 수집 및 이용에 동의합니다. (필수)</label>
+        </div>
+        <button type='submit' class='btn btn-primary btn-block'>문의 제출하기</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div class='container text-center'>
+      <p>&copy; 2023 MVP Solution. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src='assets/js/main.js'></script>
+</body>
+</html>
